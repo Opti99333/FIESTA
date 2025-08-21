@@ -28,7 +28,7 @@ export default function Dexscreener() {
 
          <div className="dex__frame">
   <iframe
-    src="https://dexscreener.com/solana/4yXG1V68A7BU1vKbBMACDBbBhbp3P5p5uppRZkyWubuV?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=13&chartType=usd&interval=1"
+    src="https://dexscreener.com/solana/Bwidms8XER3nXtqDiTGoyZhw4cVm7Xwf6Lsa3RwrrUmW?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=13&chartType=usd&interval=1"
     loading="lazy"
     title="DexScreener Chart"
     referrerPolicy="no-referrer-when-downgrade"
