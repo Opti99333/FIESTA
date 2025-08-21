@@ -1,7 +1,7 @@
 import { motion, easeOut } from "framer-motion";
 import "../styles/hero.css";
 import { fiestaMusic } from "../components/fiestamusic";
-import Birthday from "../assets/Taco_music.png"
+import Birthday from "../assets/Video-preview.png"
 
 const videoSrc = new URL("../assets/orig-video.mp4", import.meta.url).href;
 
