@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import tacopart from "../assets/taco.png";
+import tacopart from "../assets/taco-rain.png";
 
 const SombreroRain: React.FC = () => {
   const [ready, setReady] = useState(false);
