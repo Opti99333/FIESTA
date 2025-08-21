@@ -37,7 +37,7 @@ export default function Header() {
             <a className="social-btn ring social-icon-animation" href="https://t.me/FIESTA_DOG" target="_blank" rel="noreferrer" aria-label="Telegram">
               <img src={tgIcon} alt="Telegram" className="social-icon" />
             </a>
-            <a className="social-btn ring social-icon-animation" href="https://x.com/FIESTA_DOGGO" target="_blank" rel="noreferrer" aria-label="Twitter/X">
+            <a className="social-btn ring social-icon-animation" href="https://x.com/FIESTA__DOG" target="_blank" rel="noreferrer" aria-label="Twitter/X">
               <img src={twIcon} alt="Twitter" className="social-icon" />
             </a>
           </div>

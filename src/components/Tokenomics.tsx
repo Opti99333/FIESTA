@@ -3,7 +3,7 @@ import blockBg from "../assets/block-tokenomic.png";
 
 const DATA = [
   { title: "1B SUPPLY",  text: "" },
-  { title: "100% TOKEN BURN",  text: "" },
+  { title: "100% Liquidity locked",  text: "" },
   { title: "0% Tax/Fees",text: "" },
 ];
 

@@ -15,7 +15,7 @@ export default function Dexscreener() {
         >
           <div className="dex__glow" aria-hidden="true" />
           <header className="dex__header">
-            <h3 className="dex__title">$SOMBRERO — Live Chart</h3>
+            <h3 className="dex__title">$FIESTA — Live Chart</h3>
             <a
               className="dex__link"
               href="https://dexscreener.com/solana/4yXG1V68A7BU1vKbBMACDBbBhbp3P5p5uppRZkyWubuV?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=13&chartType=usd&interval=1"

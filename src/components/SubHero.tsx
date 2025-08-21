@@ -32,7 +32,7 @@ const word: Variants = {
 };
 
 export default function SubHero({
-  title = "Join the Fiesta — the party just started!",
+  title = "Join the $FIESTA — the party just started!",
   subtitle = "He just finished his taco and is ready to become number #1 in crypto.",
 }: Props) {
   const words = title.split(" ");

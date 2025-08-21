@@ -6,7 +6,7 @@
 
   /* Базовая типографика */
   --fz-title: clamp(20px, 2.1vw, 36px);
-  --fz-text: clamp(14px, 1.1vw, 18px);
+  --fz-text: clamp(28px, 1.1vw, 40px);
 }
 
 .fiesta{ position: relative; padding: clamp(24px, 5vw, 64px) 18px; }
