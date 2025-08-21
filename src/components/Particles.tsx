@@ -14,7 +14,7 @@ const SombreroRain: React.FC = () => {
 
   const options = {
   fullScreen: { enable: false },
-  detectRetina: true,
+  detectRetina: false,
   fpsLimit: 60,
   particles: {
     number: { value: 4, density: { enable: true, area: 1100 } },
