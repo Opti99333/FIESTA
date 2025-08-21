@@ -1,6 +1,7 @@
 import { motion, easeOut } from "framer-motion";
 import "../styles/hero.css";
 import { fiestaMusic } from "../components/fiestamusic";
+import Birthday from "../assets/Taco_music.png"
 
 const videoSrc = new URL("../assets/orig-video.mp4", import.meta.url).href;
 
@@ -25,7 +26,8 @@ const handleVideoPlay = () => {
           <video
             className="fiesta__video"
             src={videoSrc}
-            preload="metadata"
+            preload="none"
+            poster={Birthday}
             controls
             playsInline
             onPlay={handleVideoPlay}
