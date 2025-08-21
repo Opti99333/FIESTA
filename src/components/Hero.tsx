@@ -53,7 +53,7 @@ const handleVideoPlay = () => {
             <p>Welcome to $FIESTA — the only meme coin where every day feels like Fiesta 🎉</p>
             <p>💃 Buy it. 🕺 HODL it. 🎶 Shake it. Because at this party, the music never stops.</p>
             <p>Fueled by community vibes, endless memes, and — of course — 🌮 TACOS ON TAP 🌮</p>
-<h3>CA: 312321321312321313232132</h3>
+<h3>CA: Bwidms8XER3nXtqDiTGoyZhw4cVm7Xwf6Lsa3RwrrUmW</h3>
           </div>
         </motion.article>
       </div>

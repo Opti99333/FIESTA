@@ -47,7 +47,7 @@ export default function Header() {
           <img src={doggy} alt="Mascot" />
         </div>
 
-        <a className="buy-link" href="https://dexscreener/token/pair">
+        <a className="buy-link" href="https://dexscreener/token/Bwidms8XER3nXtqDiTGoyZhw4cVm7Xwf6Lsa3RwrrUmW">
           <span className="buy-wrap">
             <img className="BuyButton BuyButton-hover" src={BuyButton} alt="Buy" />
           </span>
@@ -61,7 +61,7 @@ export default function Header() {
         <a className="mobile-link" href="https://x.com/FIESTA_DOGGO" target="_blank" rel="noreferrer" onClick={close}>
           <img src={twIcon} alt="Twitter" /> Twitter
         </a>
-        <a className="mobile-link primary" href="https://dexscreener/token/pair" onClick={close}>
+        <a className="mobile-link primary" href="https://dexscreener/token/Bwidms8XER3nXtqDiTGoyZhw4cVm7Xwf6Lsa3RwrrUmW" onClick={close}>
           <img src={BuyButton} alt="Buy" /> Buy
         </a>
       </div>
