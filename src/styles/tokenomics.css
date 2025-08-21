@@ -1,0 +1,95 @@
+.tokenomics {
+  padding: clamp(40px, 6vw, 90px) 0;
+  position: relative;
+  z-index: 2;
+}
+
+.tokenomics__title {
+  text-align: center;
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 900;
+  margin-bottom: clamp(22px, 3vw, 36px);
+  text-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+
+
+.tokenomics__grid {
+  display: grid;
+  gap: clamp(18px, 3vw, 28px);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px) {
+  .tokenomics__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+.tokenomics__block {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;                    
+  min-height: 220px;                         
+  display: grid;
+  place-items: center;                       
+  transform: translateY(0);
+  transition: transform .25s ease, filter .25s ease;
+  will-change: transform;
+}
+@media (min-width: 960px) {
+  .tokenomics__block { min-height: 280px; }
+}
+
+.tokenomics__block:hover {
+  transform: translateY(-8px);
+  filter: drop-shadow(0 16px 28px rgba(0,0,0,.25));
+}
+
+.tokenomics__bg {
+  position: absolute;
+  inset: 0;
+  width: 95%;
+  height: 100%;
+  object-fit: contain;                       
+  pointer-events: none;
+  transition: transform .25s ease;
+   transition: transform .2s ease;
+  animation: swing 3s ease-in-out infinite;
+}
+.tokenomics__block:hover .tokenomics__bg {
+  transform: scale(1.04);
+}
+
+
+.tokenomics__content {
+  position: relative;                         
+  width: 70%;                                 
+  max-width: 520px;
+  text-align: center;
+  color: #2f1900;
+}
+
+.tokenomics__content h3 {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.tokenomics__content p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 700;                           
+  text-transform: none;
+}
+
+@media (max-width: 420px) {
+  .tokenomics__content { width: 78%; }
+}
+
+
+@keyframes swing {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  25%  { transform: translate(-2px, -1.5px) rotate(-1deg); }
+  50%  { transform: translate(0px, 0px) rotate(0deg); }
+  75%  { transform: translate(-2px, -1.5px) rotate(1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}

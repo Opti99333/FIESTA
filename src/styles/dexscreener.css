@@ -1,0 +1,122 @@
+.dex {
+  padding: clamp(24px, 5vw, 56px) 0;
+}
+.dex__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.dex__card {
+  position: relative;
+  border-radius: 22px;
+  padding: 18px;
+  background: color-mix(in oklab, white 4%, transparent);
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(6px) saturate(120%);
+  box-shadow:
+    0 12px 40px rgba(163, 76, 255, .25),
+    inset 0 0 0 1px rgba(255,255,255,.05);
+  overflow: hidden;
+}
+
+.dex__glow {
+  position: absolute; inset: -40% -20% auto -20%;
+  height: 60%;
+  background: radial-gradient(60% 80% at 50% 40%,
+    rgba(255,120,216,.35) 0%,
+    rgba(138,92,255,.28) 35%,
+    transparent 70%);
+  filter: blur(22px);
+  pointer-events: none;
+}
+
+.dex__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  margin: 2px 2px 14px;
+}
+.dex__title {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.dex__link {
+  font-size: 14px;
+  opacity: .8;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px dashed rgba(255,255,255,.18);
+}
+.dex__link:hover { opacity: 1; border-style: solid; }
+
+.dex__frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0c0e13;
+  outline: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  aspect-ratio: 16 / 10;            
+}
+@media (min-width: 1400px) {
+  .dex__frame { aspect-ratio: 20 / 13; }
+}
+.dex__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.dex__footer {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  opacity: .9;
+}
+.dex__pill {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: inset 0 0 24px rgba(255,255,255,.03);
+}
+
+.dex__card:hover { transform: translateY(-2px); transition: transform .28s ease; }
+
+.dex__frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0c0e13;
+  outline: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  aspect-ratio: 16 / 10;
+}
+
+.dex__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+}
+
+.dex__overlay {
+  position: absolute;
+  inset: 0;                 
+  z-index: 2;
+  margin-top: 39%;
+  pointer-events: none;     
+  object-fit: contain;      
+  opacity: 1;
+  width: 35%;           
+}

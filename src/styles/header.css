@@ -1,0 +1,108 @@
+.site-header { position: relative; }
+.site-header--scrolled { backdrop-filter: blur(4px); }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.5rem;
+}
+
+.left-wrap { display: flex; align-items: center; gap: 2.5rem; }
+.desktop-only { display: flex; align-items: center; gap: 2.5rem; }
+
+.buy-link { margin-right: 2.5rem; text-decoration: none; }
+
+
+.BallBig { display:flex; justify-content:center; align-items:center; }
+.BallBig img { width: 45vh; animation: swing 3s ease-in-out infinite; margin-left: -6vh; }
+
+@keyframes swing {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  25%  { transform: translate(-5px, -3px) rotate(-2deg); }
+  50%  { transform: translate(0px, 0px) rotate(0deg); }
+  75%  { transform: translate(5px, -3px) rotate(2deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.social-icon { width: 7vh; transition: transform .2s ease; animation: swing 3s ease-in-out infinite; }
+.social-icon-animation:hover { transform: scale(1.15) rotate(-5deg); transition: transform .4s ease; }
+
+.buy-wrap { animation: swing 3s ease-in-out infinite; display:inline-block; }
+.BuyButton { width: 13vh; transition: transform .4s ease; }
+.BuyButton-hover:hover { transform: scale(1.15) rotate(-5deg); }
+
+.burger { display:none; position:relative; width: 36px; height: 28px; border:0; background:transparent; padding:0; cursor:pointer; }
+.burger span { position:absolute; left:0; right:0; height:3px; top:0; background: currentColor; border-radius:2px; transition: transform .25s ease, top .25s ease, opacity .25s ease; }
+.burger span:nth-child(2) { top: 12px; }
+.burger span:nth-child(3) { top: 24px; }
+.burger.is-open span:nth-child(1) { top: 12px; transform: rotate(45deg); }
+.burger.is-open span:nth-child(2) { opacity:0; }
+.burger.is-open span:nth-child(3) { top: 12px; transform: rotate(-45deg); }
+
+
+.mobile-menu { position: fixed; inset: 0 0 0 auto; width: 78vw; max-width: 360px; translate: 100% 0; transition: translate .28s ease; background: rgba(15,15,20,.98); border-left: 1px solid rgba(255,255,255,.08); z-index: 60; padding: 18px; display:flex; flex-direction:column; gap: 8px; }
+.mobile-menu--open { translate: 0 0; }
+.mobile-link { display:flex; align-items:center; gap:10px; padding: 12px 10px; border-radius: 12px; color: #fff; text-decoration: none; font-size: 16px; }
+.mobile-link img { width: 22px; height: auto; }
+.mobile-link.primary { background: rgba(255,255,255,.08); }
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 50; }
+
+
+@media (min-width: 1900px) and (min-height: 1150px) {
+  .header-nav { padding: 1.4rem 4rem; }
+  .BallBig img { width: 26vh; margin-left: -6vh; }
+  .social-icon { width: 7.5vh; }
+  .BuyButton { width: 13.5vh; }
+}
+
+
+@media (min-width: 2560px) and (max-width: 3839.98px) {
+  .header-nav { padding: 1.8rem 5rem; }
+  .left-wrap, .desktop-only { gap: 3rem; }
+  .BallBig img { width: 22vh; margin-left: -5vh; }
+  .social-icon { width: 6vh; }
+  .BuyButton { width: 11vh; }
+}
+
+
+@media (min-width: 3840px) {
+  .header-nav { padding: 2.4rem 7rem; }
+  .left-wrap, .desktop-only { gap: 3.5rem; }
+  .BallBig img { width: 20vh; margin-left: -4vh; }
+  .social-icon { width: 5.5vh; }
+  .BuyButton { width: 10vh; }
+}
+
+
+@media (max-width: 1440.98px) {
+  .header-nav { padding: 1rem 2rem; }
+  .left-wrap, .desktop-only { gap: 1.5rem; }
+  .BallBig img { width: 23vh; margin-left: -5vh; }
+  .social-icon { width: 6vh; }
+  .BuyButton { width: 12vh; }
+}
+
+
+@media (max-width: 1024.98px) {
+  .desktop-only { display:none; }
+  .burger { display:block; }
+  .header-nav { padding: .9rem 1.25rem; }
+  .BallBig img { width: 20vh; margin-left: -3vh; }
+  .BuyButton { width: 12vh; }
+}
+
+
+@media (max-width: 768.98px) {
+  .header-nav { padding: .8rem 1rem; }
+  .BallBig img { width: 18vh; margin-left: -0vh; }
+  .buy-link { margin-right: .5rem; }
+  .BuyButton { width: 11vh; }
+}
+
+
+@media (max-width: 420.98px) {
+  .header-nav { padding: .7rem .75rem; }
+  .BallBig img { width: 16vh; margin-left: -1vh; }
+  .BuyButton { width: 10vh; }
+}
