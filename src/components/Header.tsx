@@ -34,10 +34,10 @@ export default function Header() {
           </button>
 
           <div className="socials desktop-only">
-            <a className="social-btn ring social-icon-animation" href="https://t.me/your_channel" target="_blank" rel="noreferrer" aria-label="Telegram">
+            <a className="social-btn ring social-icon-animation" href="https://t.me/FIESTA_DOG" target="_blank" rel="noreferrer" aria-label="Telegram">
               <img src={tgIcon} alt="Telegram" className="social-icon" />
             </a>
-            <a className="social-btn ring social-icon-animation" href="https://twitter.com/your_handle" target="_blank" rel="noreferrer" aria-label="Twitter/X">
+            <a className="social-btn ring social-icon-animation" href="https://x.com/FIESTA_DOGGO" target="_blank" rel="noreferrer" aria-label="Twitter/X">
               <img src={twIcon} alt="Twitter" className="social-icon" />
             </a>
           </div>
@@ -47,7 +47,7 @@ export default function Header() {
           <img src={doggy} alt="Mascot" />
         </div>
 
-        <a className="buy-link" href="#buy">
+        <a className="buy-link" href="https://dexscreener/token/pair">
           <span className="buy-wrap">
             <img className="BuyButton BuyButton-hover" src={BuyButton} alt="Buy" />
           </span>
@@ -55,13 +55,13 @@ export default function Header() {
       </nav>
 
       <div id="mobile-menu" className={`mobile-menu ${open ? "mobile-menu--open" : ""}`}>
-        <a className="mobile-link" href="https://t.me/your_channel" target="_blank" rel="noreferrer" onClick={close}>
+        <a className="mobile-link" href="https://t.me/FIESTA_DOG" target="_blank" rel="noreferrer" onClick={close}>
           <img src={tgIcon} alt="Telegram" /> Telegram
         </a>
-        <a className="mobile-link" href="https://twitter.com/your_handle" target="_blank" rel="noreferrer" onClick={close}>
+        <a className="mobile-link" href="https://x.com/FIESTA_DOGGO" target="_blank" rel="noreferrer" onClick={close}>
           <img src={twIcon} alt="Twitter" /> Twitter
         </a>
-        <a className="mobile-link primary" href="#buy" onClick={close}>
+        <a className="mobile-link primary" href="https://dexscreener/token/pair" onClick={close}>
           <img src={BuyButton} alt="Buy" /> Buy
         </a>
       </div>
